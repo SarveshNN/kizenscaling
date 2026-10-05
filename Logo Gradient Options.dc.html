@@ -1,0 +1,507 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="" />
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600&display=swap" rel="stylesheet" />
+<style>
+  html, body { margin: 0; padding: 0; background: #0A1F1B; }
+  @keyframes kzSpin { from { transform: rotate(0deg); } to { transform: rotate(360deg); } }
+</style>
+</helmet>
+
+<div style="background: #0A1F1B; color: rgba(245,241,232,0.70); font-family: Archivo, Helvetica, Arial, sans-serif; padding: 56px 40px 72px; min-height: 100vh; box-sizing: border-box;">
+
+  <div style="max-width: 1120px; margin: 0 auto;">
+    <div style="font-size: 11px; font-weight: 500; letter-spacing: 0.14em; text-transform: uppercase; color: #5DCAA5;">Pick a letter or a number</div>
+    <h1 style="margin: 16px 0 0; font-size: 30px; font-weight: 500; letter-spacing: -0.03em; color: #F5F1E8;">Logo gradient options</h1>
+    <p style="margin: 14px 0 0; max-width: 520px; font-size: 15px; line-height: 1.6;">Two families. The lettered set runs the gradient along the ring; the numbered set runs it straight across. Tell me a letter or a number.</p>
+
+    <div style="margin-top: 8px; padding-top: 44px;">
+      <div style="font-size: 11px; font-weight: 500; letter-spacing: 0.14em; text-transform: uppercase; color: #85B7EB;">Along the ring</div>
+      <h2 style="margin: 16px 0 0; font-size: 24px; font-weight: 500; letter-spacing: -0.025em; color: #F5F1E8;">Gradient that travels the stroke</h2>
+      <p style="margin: 14px 0 0; max-width: 560px; font-size: 15px; line-height: 1.6;">These follow the mark instead of crossing it: one colour at the thin tip, a second through the middle, a third where the stroke is heaviest. Shown static so you can read the colour at each point.</p>
+    </div>
+
+    <div style="margin-top: 44px; display: grid; grid-template-columns: repeat(auto-fill, minmax(240px, 1fr)); gap: 44px 32px;">
+      <div style="display: flex; flex-direction: column; align-items: center; gap: 22px; padding: 34px 20px; border: 1px solid rgba(245,241,232,0.13); border-radius: 18px;">
+        <svg viewBox="6 6 38 38" fill="none" aria-hidden="true" style="width: 132px; height: 132px;">
+          <defs>
+            <linearGradient id="pA0" gradientUnits="userSpaceOnUse" x1="11.79" y1="33.55" x2="11.31" y2="15.11">
+              <stop offset="0" stop-color="#8E86E8"></stop>
+              <stop offset="1" stop-color="#8A9EE9"></stop>
+            </linearGradient>
+            <linearGradient id="pA1" gradientUnits="userSpaceOnUse" x1="15.11" y1="11.31" x2="36.69" y2="15.11">
+              <stop offset="0" stop-color="#88A4EA"></stop>
+              <stop offset="1" stop-color="#7CBBDC"></stop>
+            </linearGradient>
+            <linearGradient id="pA2" gradientUnits="userSpaceOnUse" x1="38.9" y1="19.72" x2="25.89" y2="39.39">
+              <stop offset="0" stop-color="#77BDD3"></stop>
+              <stop offset="1" stop-color="#5DCAA5"></stop>
+            </linearGradient>
+          </defs>
+          <g fill="none">
+            <path d="M11.79 33.55A15.5 15.5 0 0 1 11.31 15.11" stroke="url(#pA0)" stroke-width="1.9"></path>
+            <path d="M15.11 11.31A15.5 15.5 0 0 1 36.69 15.11" stroke="url(#pA1)" stroke-width="4.4"></path>
+            <path d="M38.9 19.72A15.5 15.5 0 0 1 25.89 39.39" stroke="url(#pA2)" stroke-width="6.2"></path>
+          </g>
+        </svg>
+        <div style="text-align: center;">
+          <div style="font-size: 15px; font-weight: 600; color: #F5F1E8;">A &nbsp;Indigo → blue → aqua</div>
+          <div style="margin-top: 7px; font-size: 13px; line-height: 1.5;">What's on the page now. Cool the whole way, tightening toward the heavy end.</div>
+        </div>
+      </div>
+
+      <div style="display: flex; flex-direction: column; align-items: center; gap: 22px; padding: 34px 20px; border: 1px solid rgba(245,241,232,0.13); border-radius: 18px;">
+        <svg viewBox="6 6 38 38" fill="none" aria-hidden="true" style="width: 132px; height: 132px;">
+          <defs>
+            <linearGradient id="pB0" gradientUnits="userSpaceOnUse" x1="11.79" y1="33.55" x2="11.31" y2="15.11">
+              <stop offset="0" stop-color="#0F6E56"></stop>
+              <stop offset="1" stop-color="#359B7C"></stop>
+            </linearGradient>
+            <linearGradient id="pB1" gradientUnits="userSpaceOnUse" x1="15.11" y1="11.31" x2="36.69" y2="15.11">
+              <stop offset="0" stop-color="#3FA787"></stop>
+              <stop offset="1" stop-color="#7ED2B3"></stop>
+            </linearGradient>
+            <linearGradient id="pB2" gradientUnits="userSpaceOnUse" x1="38.9" y1="19.72" x2="25.89" y2="39.39">
+              <stop offset="0" stop-color="#91D7BC"></stop>
+              <stop offset="1" stop-color="#F5F1E8"></stop>
+            </linearGradient>
+          </defs>
+          <g fill="none">
+            <path d="M11.79 33.55A15.5 15.5 0 0 1 11.31 15.11" stroke="url(#pB0)" stroke-width="1.9"></path>
+            <path d="M15.11 11.31A15.5 15.5 0 0 1 36.69 15.11" stroke="url(#pB1)" stroke-width="4.4"></path>
+            <path d="M38.9 19.72A15.5 15.5 0 0 1 25.89 39.39" stroke="url(#pB2)" stroke-width="6.2"></path>
+          </g>
+        </svg>
+        <div style="text-align: center;">
+          <div style="font-size: 15px; font-weight: 600; color: #F5F1E8;">B &nbsp;Deep teal → aqua → cream</div>
+          <div style="margin-top: 7px; font-size: 13px; line-height: 1.5;">Dark tip that almost vanishes, brightening to near-white where the stroke is thickest.</div>
+        </div>
+      </div>
+
+      <div style="display: flex; flex-direction: column; align-items: center; gap: 22px; padding: 34px 20px; border: 1px solid rgba(245,241,232,0.13); border-radius: 18px;">
+        <svg viewBox="6 6 38 38" fill="none" aria-hidden="true" style="width: 132px; height: 132px;">
+          <defs>
+            <linearGradient id="pC0" gradientUnits="userSpaceOnUse" x1="11.79" y1="33.55" x2="11.31" y2="15.11">
+              <stop offset="0" stop-color="#E8996B"></stop>
+              <stop offset="1" stop-color="#A4B187"></stop>
+            </linearGradient>
+            <linearGradient id="pC1" gradientUnits="userSpaceOnUse" x1="15.11" y1="11.31" x2="36.69" y2="15.11">
+              <stop offset="0" stop-color="#92B78F"></stop>
+              <stop offset="1" stop-color="#68BBB3"></stop>
+            </linearGradient>
+            <linearGradient id="pC2" gradientUnits="userSpaceOnUse" x1="38.9" y1="19.72" x2="25.89" y2="39.39">
+              <stop offset="0" stop-color="#6EB3BC"></stop>
+              <stop offset="1" stop-color="#8E86E8"></stop>
+            </linearGradient>
+          </defs>
+          <g fill="none">
+            <path d="M11.79 33.55A15.5 15.5 0 0 1 11.31 15.11" stroke="url(#pC0)" stroke-width="1.9"></path>
+            <path d="M15.11 11.31A15.5 15.5 0 0 1 36.69 15.11" stroke="url(#pC1)" stroke-width="4.4"></path>
+            <path d="M38.9 19.72A15.5 15.5 0 0 1 25.89 39.39" stroke="url(#pC2)" stroke-width="6.2"></path>
+          </g>
+        </svg>
+        <div style="text-align: center;">
+          <div style="font-size: 15px; font-weight: 600; color: #F5F1E8;">C &nbsp;Clay → aqua → indigo</div>
+          <div style="margin-top: 7px; font-size: 13px; line-height: 1.5;">Warm to cool. Uses all three of the page hues in one sweep.</div>
+        </div>
+      </div>
+
+      <div style="display: flex; flex-direction: column; align-items: center; gap: 22px; padding: 34px 20px; border: 1px solid rgba(245,241,232,0.13); border-radius: 18px;">
+        <svg viewBox="6 6 38 38" fill="none" aria-hidden="true" style="width: 132px; height: 132px;">
+          <defs>
+            <linearGradient id="pD0" gradientUnits="userSpaceOnUse" x1="11.79" y1="33.55" x2="11.31" y2="15.11">
+              <stop offset="0" stop-color="#8E86E8"></stop>
+              <stop offset="1" stop-color="#76A7C7"></stop>
+            </linearGradient>
+            <linearGradient id="pD1" gradientUnits="userSpaceOnUse" x1="15.11" y1="11.31" x2="36.69" y2="15.11">
+              <stop offset="0" stop-color="#70B0BF"></stop>
+              <stop offset="1" stop-color="#7ED2B3"></stop>
+            </linearGradient>
+            <linearGradient id="pD2" gradientUnits="userSpaceOnUse" x1="38.9" y1="19.72" x2="25.89" y2="39.39">
+              <stop offset="0" stop-color="#91D7BC"></stop>
+              <stop offset="1" stop-color="#F5F1E8"></stop>
+            </linearGradient>
+          </defs>
+          <g fill="none">
+            <path d="M11.79 33.55A15.5 15.5 0 0 1 11.31 15.11" stroke="url(#pD0)" stroke-width="1.9"></path>
+            <path d="M15.11 11.31A15.5 15.5 0 0 1 36.69 15.11" stroke="url(#pD1)" stroke-width="4.4"></path>
+            <path d="M38.9 19.72A15.5 15.5 0 0 1 25.89 39.39" stroke="url(#pD2)" stroke-width="6.2"></path>
+          </g>
+        </svg>
+        <div style="text-align: center;">
+          <div style="font-size: 15px; font-weight: 600; color: #F5F1E8;">D &nbsp;Indigo → aqua → cream</div>
+          <div style="margin-top: 7px; font-size: 13px; line-height: 1.5;">Same start as A but ends lighter, so the heavy arc carries the most weight.</div>
+        </div>
+      </div>
+
+      <div style="display: flex; flex-direction: column; align-items: center; gap: 22px; padding: 34px 20px; border: 1px solid rgba(245,241,232,0.13); border-radius: 18px;">
+        <svg viewBox="6 6 38 38" fill="none" aria-hidden="true" style="width: 132px; height: 132px;">
+          <defs>
+            <linearGradient id="pE0" gradientUnits="userSpaceOnUse" x1="11.79" y1="33.55" x2="11.31" y2="15.11">
+              <stop offset="0" stop-color="#85B7EB"></stop>
+              <stop offset="1" stop-color="#72C0C9"></stop>
+            </linearGradient>
+            <linearGradient id="pE1" gradientUnits="userSpaceOnUse" x1="15.11" y1="11.31" x2="36.69" y2="15.11">
+              <stop offset="0" stop-color="#6CC3C0"></stop>
+              <stop offset="1" stop-color="#78C595"></stop>
+            </linearGradient>
+            <linearGradient id="pE2" gradientUnits="userSpaceOnUse" x1="38.9" y1="19.72" x2="25.89" y2="39.39">
+              <stop offset="0" stop-color="#87C28B"></stop>
+              <stop offset="1" stop-color="#D8B25A"></stop>
+            </linearGradient>
+          </defs>
+          <g fill="none">
+            <path d="M11.79 33.55A15.5 15.5 0 0 1 11.31 15.11" stroke="url(#pE0)" stroke-width="1.9"></path>
+            <path d="M15.11 11.31A15.5 15.5 0 0 1 36.69 15.11" stroke="url(#pE1)" stroke-width="4.4"></path>
+            <path d="M38.9 19.72A15.5 15.5 0 0 1 25.89 39.39" stroke="url(#pE2)" stroke-width="6.2"></path>
+          </g>
+        </svg>
+        <div style="text-align: center;">
+          <div style="font-size: 15px; font-weight: 600; color: #F5F1E8;">E &nbsp;Blue → aqua → brass</div>
+          <div style="margin-top: 7px; font-size: 13px; line-height: 1.5;">Cool to warm — the opposite direction of C. Sunlight arriving at the end.</div>
+        </div>
+      </div>
+
+      <div style="display: flex; flex-direction: column; align-items: center; gap: 22px; padding: 34px 20px; border: 1px solid rgba(245,241,232,0.13); border-radius: 18px;">
+        <svg viewBox="6 6 38 38" fill="none" aria-hidden="true" style="width: 132px; height: 132px;">
+          <defs>
+            <linearGradient id="pF0" gradientUnits="userSpaceOnUse" x1="11.79" y1="33.55" x2="11.31" y2="15.11">
+              <stop offset="0" stop-color="#0F6E56"></stop>
+              <stop offset="1" stop-color="#48919E"></stop>
+            </linearGradient>
+            <linearGradient id="pF1" gradientUnits="userSpaceOnUse" x1="15.11" y1="11.31" x2="36.69" y2="15.11">
+              <stop offset="0" stop-color="#589BB2"></stop>
+              <stop offset="1" stop-color="#7CBBDC"></stop>
+            </linearGradient>
+            <linearGradient id="pF2" gradientUnits="userSpaceOnUse" x1="38.9" y1="19.72" x2="25.89" y2="39.39">
+              <stop offset="0" stop-color="#77BDD3"></stop>
+              <stop offset="1" stop-color="#5DCAA5"></stop>
+            </linearGradient>
+          </defs>
+          <g fill="none">
+            <path d="M11.79 33.55A15.5 15.5 0 0 1 11.31 15.11" stroke="url(#pF0)" stroke-width="1.9"></path>
+            <path d="M15.11 11.31A15.5 15.5 0 0 1 36.69 15.11" stroke="url(#pF1)" stroke-width="4.4"></path>
+            <path d="M38.9 19.72A15.5 15.5 0 0 1 25.89 39.39" stroke="url(#pF2)" stroke-width="6.2"></path>
+          </g>
+        </svg>
+        <div style="text-align: center;">
+          <div style="font-size: 15px; font-weight: 600; color: #F5F1E8;">F &nbsp;Deep teal → blue → aqua</div>
+          <div style="margin-top: 7px; font-size: 13px; line-height: 1.5;">Stays inside the cool half. The blue in the middle keeps it from reading flat.</div>
+        </div>
+      </div>
+
+      <div style="display: flex; flex-direction: column; align-items: center; gap: 22px; padding: 34px 20px; border: 1px solid rgba(245,241,232,0.13); border-radius: 18px;">
+        <svg viewBox="6 6 38 38" fill="none" aria-hidden="true" style="width: 132px; height: 132px;">
+          <defs>
+            <linearGradient id="pG0" gradientUnits="userSpaceOnUse" x1="11.79" y1="33.55" x2="11.31" y2="15.11">
+              <stop offset="0" stop-color="#5DCAA5"></stop>
+              <stop offset="1" stop-color="#70C1C7"></stop>
+            </linearGradient>
+            <linearGradient id="pG1" gradientUnits="userSpaceOnUse" x1="15.11" y1="11.31" x2="36.69" y2="15.11">
+              <stop offset="0" stop-color="#76BED0"></stop>
+              <stop offset="1" stop-color="#87ACEA"></stop>
+            </linearGradient>
+            <linearGradient id="pG2" gradientUnits="userSpaceOnUse" x1="38.9" y1="19.72" x2="25.89" y2="39.39">
+              <stop offset="0" stop-color="#88A6EA"></stop>
+              <stop offset="1" stop-color="#8E86E8"></stop>
+            </linearGradient>
+          </defs>
+          <g fill="none">
+            <path d="M11.79 33.55A15.5 15.5 0 0 1 11.31 15.11" stroke="url(#pG0)" stroke-width="1.9"></path>
+            <path d="M15.11 11.31A15.5 15.5 0 0 1 36.69 15.11" stroke="url(#pG1)" stroke-width="4.4"></path>
+            <path d="M38.9 19.72A15.5 15.5 0 0 1 25.89 39.39" stroke="url(#pG2)" stroke-width="6.2"></path>
+          </g>
+        </svg>
+        <div style="text-align: center;">
+          <div style="font-size: 15px; font-weight: 600; color: #F5F1E8;">G &nbsp;Aqua → blue → indigo</div>
+          <div style="margin-top: 7px; font-size: 13px; line-height: 1.5;">A reversed. Bright tip, and the heavy arc settles into indigo.</div>
+        </div>
+      </div>
+
+      <div style="display: flex; flex-direction: column; align-items: center; gap: 22px; padding: 34px 20px; border: 1px solid rgba(245,241,232,0.13); border-radius: 18px;">
+        <svg viewBox="6 6 38 38" fill="none" aria-hidden="true" style="width: 132px; height: 132px;">
+          <defs>
+            <linearGradient id="pH0" gradientUnits="userSpaceOnUse" x1="11.79" y1="33.55" x2="11.31" y2="15.11">
+              <stop offset="0" stop-color="#F5F1E8"></stop>
+              <stop offset="1" stop-color="#ABDEC7"></stop>
+            </linearGradient>
+            <linearGradient id="pH1" gradientUnits="userSpaceOnUse" x1="15.11" y1="11.31" x2="36.69" y2="15.11">
+              <stop offset="0" stop-color="#97D9BF"></stop>
+              <stop offset="1" stop-color="#4CB694"></stop>
+            </linearGradient>
+            <linearGradient id="pH2" gradientUnits="userSpaceOnUse" x1="38.9" y1="19.72" x2="25.89" y2="39.39">
+              <stop offset="0" stop-color="#42AB8A"></stop>
+              <stop offset="1" stop-color="#0F6E56"></stop>
+            </linearGradient>
+          </defs>
+          <g fill="none">
+            <path d="M11.79 33.55A15.5 15.5 0 0 1 11.31 15.11" stroke="url(#pH0)" stroke-width="1.9"></path>
+            <path d="M15.11 11.31A15.5 15.5 0 0 1 36.69 15.11" stroke="url(#pH1)" stroke-width="4.4"></path>
+            <path d="M38.9 19.72A15.5 15.5 0 0 1 25.89 39.39" stroke="url(#pH2)" stroke-width="6.2"></path>
+          </g>
+        </svg>
+        <div style="text-align: center;">
+          <div style="font-size: 15px; font-weight: 600; color: #F5F1E8;">H &nbsp;Cream → aqua → deep teal</div>
+          <div style="margin-top: 7px; font-size: 13px; line-height: 1.5;">B reversed. The thick end sinks into the background instead of lifting off it.</div>
+        </div>
+      </div>
+    </div>
+
+    <div style="margin-top: 64px; padding-top: 52px; border-top: 1px solid rgba(245,241,232,0.13);">
+      <div style="font-size: 11px; font-weight: 500; letter-spacing: 0.14em; text-transform: uppercase; color: #5DCAA5;">Across the mark</div>
+      <h2 style="margin: 16px 0 0; font-size: 24px; font-weight: 500; letter-spacing: -0.025em; color: #F5F1E8;">Two stops, straight across</h2>
+      <p style="margin: 14px 0 0; max-width: 560px; font-size: 15px; line-height: 1.6;">The earlier set, kept for comparison. Each spins the way the big mark does on the page.</p>
+    </div>
+
+    <div style="display: grid; grid-template-columns: repeat(auto-fill, minmax(240px, 1fr)); gap: 44px 32px;">
+
+      <div style="display: flex; flex-direction: column; align-items: center; gap: 22px; padding: 34px 20px; border: 1px solid rgba(245,241,232,0.13); border-radius: 18px;">
+        <svg viewBox="6 6 38 38" fill="none" aria-hidden="true" style="width: 118px; height: 118px; animation: kzSpin 30s linear infinite;">
+          <defs><linearGradient id="g1" gradientUnits="objectBoundingBox" x1="0" y1="1" x2="1" y2="0"><stop offset="0" stop-color="#8E86E8"></stop><stop offset="1" stop-color="#5DCAA5"></stop></linearGradient></defs>
+          <g fill="none" stroke="url(#g1)">
+            <path d="M11.79 33.55A15.5 15.5 0 0 1 11.31 15.11" stroke-width="1.9"></path>
+            <path d="M15.11 11.31A15.5 15.5 0 0 1 36.69 15.11" stroke-width="4.4"></path>
+            <path d="M38.9 19.72A15.5 15.5 0 0 1 25.89 39.39" stroke-width="6.2"></path>
+          </g>
+        </svg>
+        <div style="text-align: center;">
+          <div style="font-size: 15px; font-weight: 600; color: #F5F1E8;">1 &nbsp;Indigo → aqua</div>
+          <div style="margin-top: 7px; font-size: 13px; line-height: 1.5;">What's on the page now.</div>
+        </div>
+      </div>
+
+      <div style="display: flex; flex-direction: column; align-items: center; gap: 22px; padding: 34px 20px; border: 1px solid rgba(245,241,232,0.13); border-radius: 18px;">
+        <svg viewBox="6 6 38 38" fill="none" aria-hidden="true" style="width: 118px; height: 118px; animation: kzSpin 30s linear infinite;">
+          <defs><linearGradient id="g2" gradientUnits="objectBoundingBox" x1="0" y1="1" x2="1" y2="0"><stop offset="0" stop-color="#0F6E56"></stop><stop offset="1" stop-color="#5DCAA5"></stop></linearGradient></defs>
+          <g fill="none" stroke="url(#g2)">
+            <path d="M11.79 33.55A15.5 15.5 0 0 1 11.31 15.11" stroke-width="1.9"></path>
+            <path d="M15.11 11.31A15.5 15.5 0 0 1 36.69 15.11" stroke-width="4.4"></path>
+            <path d="M38.9 19.72A15.5 15.5 0 0 1 25.89 39.39" stroke-width="6.2"></path>
+          </g>
+        </svg>
+        <div style="text-align: center;">
+          <div style="font-size: 15px; font-weight: 600; color: #F5F1E8;">2 &nbsp;Deep teal → aqua</div>
+          <div style="margin-top: 7px; font-size: 13px; line-height: 1.5;">One hue, dark to light. The tail sinks into the background.</div>
+        </div>
+      </div>
+
+      <div style="display: flex; flex-direction: column; align-items: center; gap: 22px; padding: 34px 20px; border: 1px solid rgba(245,241,232,0.13); border-radius: 18px;">
+        <svg viewBox="6 6 38 38" fill="none" aria-hidden="true" style="width: 118px; height: 118px; animation: kzSpin 30s linear infinite;">
+          <defs><linearGradient id="g3" gradientUnits="objectBoundingBox" x1="0" y1="1" x2="1" y2="0"><stop offset="0" stop-color="#5DCAA5"></stop><stop offset="1" stop-color="#F5F1E8"></stop></linearGradient></defs>
+          <g fill="none" stroke="url(#g3)">
+            <path d="M11.79 33.55A15.5 15.5 0 0 1 11.31 15.11" stroke-width="1.9"></path>
+            <path d="M15.11 11.31A15.5 15.5 0 0 1 36.69 15.11" stroke-width="4.4"></path>
+            <path d="M38.9 19.72A15.5 15.5 0 0 1 25.89 39.39" stroke-width="6.2"></path>
+          </g>
+        </svg>
+        <div style="text-align: center;">
+          <div style="font-size: 15px; font-weight: 600; color: #F5F1E8;">3 &nbsp;Aqua → cream</div>
+          <div style="margin-top: 7px; font-size: 13px; line-height: 1.5;">Brightest of the set. Reads almost white at the heavy end.</div>
+        </div>
+      </div>
+
+      <div style="display: flex; flex-direction: column; align-items: center; gap: 22px; padding: 34px 20px; border: 1px solid rgba(245,241,232,0.13); border-radius: 18px;">
+        <svg viewBox="6 6 38 38" fill="none" aria-hidden="true" style="width: 118px; height: 118px; animation: kzSpin 30s linear infinite;">
+          <defs><linearGradient id="g4" gradientUnits="objectBoundingBox" x1="0" y1="1" x2="1" y2="0"><stop offset="0" stop-color="#85B7EB"></stop><stop offset="1" stop-color="#5DCAA5"></stop></linearGradient></defs>
+          <g fill="none" stroke="url(#g4)">
+            <path d="M11.79 33.55A15.5 15.5 0 0 1 11.31 15.11" stroke-width="1.9"></path>
+            <path d="M15.11 11.31A15.5 15.5 0 0 1 36.69 15.11" stroke-width="4.4"></path>
+            <path d="M38.9 19.72A15.5 15.5 0 0 1 25.89 39.39" stroke-width="6.2"></path>
+          </g>
+        </svg>
+        <div style="text-align: center;">
+          <div style="font-size: 15px; font-weight: 600; color: #F5F1E8;">4 &nbsp;Sky → aqua</div>
+          <div style="margin-top: 7px; font-size: 13px; line-height: 1.5;">Pool water. Closest to the original file, but tighter.</div>
+        </div>
+      </div>
+
+      <div style="display: flex; flex-direction: column; align-items: center; gap: 22px; padding: 34px 20px; border: 1px solid rgba(245,241,232,0.13); border-radius: 18px;">
+        <svg viewBox="6 6 38 38" fill="none" aria-hidden="true" style="width: 118px; height: 118px; animation: kzSpin 30s linear infinite;">
+          <defs><linearGradient id="g5" gradientUnits="objectBoundingBox" x1="0" y1="1" x2="1" y2="0"><stop offset="0" stop-color="#E8996B"></stop><stop offset="1" stop-color="#5DCAA5"></stop></linearGradient></defs>
+          <g fill="none" stroke="url(#g5)">
+            <path d="M11.79 33.55A15.5 15.5 0 0 1 11.31 15.11" stroke-width="1.9"></path>
+            <path d="M15.11 11.31A15.5 15.5 0 0 1 36.69 15.11" stroke-width="4.4"></path>
+            <path d="M38.9 19.72A15.5 15.5 0 0 1 25.89 39.39" stroke-width="6.2"></path>
+          </g>
+        </svg>
+        <div style="text-align: center;">
+          <div style="font-size: 15px; font-weight: 600; color: #F5F1E8;">5 &nbsp;Clay → aqua</div>
+          <div style="margin-top: 7px; font-size: 13px; line-height: 1.5;">Warm to cool. Picks up the new third hue in the page wash.</div>
+        </div>
+      </div>
+
+      <div style="display: flex; flex-direction: column; align-items: center; gap: 22px; padding: 34px 20px; border: 1px solid rgba(245,241,232,0.13); border-radius: 18px;">
+        <svg viewBox="6 6 38 38" fill="none" aria-hidden="true" style="width: 118px; height: 118px; animation: kzSpin 30s linear infinite;">
+          <defs><linearGradient id="g6" gradientUnits="objectBoundingBox" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#5DCAA5"></stop><stop offset="1" stop-color="#0F6E56"></stop></linearGradient></defs>
+          <g fill="none" stroke="url(#g6)">
+            <path d="M11.79 33.55A15.5 15.5 0 0 1 11.31 15.11" stroke-width="1.9"></path>
+            <path d="M15.11 11.31A15.5 15.5 0 0 1 36.69 15.11" stroke-width="4.4"></path>
+            <path d="M38.9 19.72A15.5 15.5 0 0 1 25.89 39.39" stroke-width="6.2"></path>
+          </g>
+        </svg>
+        <div style="text-align: center;">
+          <div style="font-size: 15px; font-weight: 600; color: #F5F1E8;">6 &nbsp;Aqua → deep teal</div>
+          <div style="margin-top: 7px; font-size: 13px; line-height: 1.5;">Number 2 reversed, and running the other diagonal.</div>
+        </div>
+      </div>
+
+      <div style="display: flex; flex-direction: column; align-items: center; gap: 22px; padding: 34px 20px; border: 1px solid rgba(245,241,232,0.13); border-radius: 18px;">
+        <svg viewBox="6 6 38 38" fill="none" aria-hidden="true" style="width: 118px; height: 118px; animation: kzSpin 30s linear infinite;">
+          <g fill="none" stroke="#5DCAA5">
+            <path d="M11.79 33.55A15.5 15.5 0 0 1 11.31 15.11" stroke-width="1.9"></path>
+            <path d="M15.11 11.31A15.5 15.5 0 0 1 36.69 15.11" stroke-width="4.4"></path>
+            <path d="M38.9 19.72A15.5 15.5 0 0 1 25.89 39.39" stroke-width="6.2"></path>
+          </g>
+        </svg>
+        <div style="text-align: center;">
+          <div style="font-size: 15px; font-weight: 600; color: #F5F1E8;">7 &nbsp;No gradient</div>
+          <div style="margin-top: 7px; font-size: 13px; line-height: 1.5;">Flat aqua. The tapering arcs already carry the depth.</div>
+        </div>
+      </div>
+
+    </div>
+
+    <div style="margin-top: 64px; padding-top: 52px; border-top: 1px solid rgba(245,241,232,0.13);">
+      <div style="font-size: 11px; font-weight: 500; letter-spacing: 0.14em; text-transform: uppercase; color: #8E86E8;">More variation</div>
+      <p style="margin: 14px 0 0; max-width: 540px; font-size: 15px; line-height: 1.6;">Still two stops each. These change the direction the gradient runs, or push the colour pairing somewhere the first set didn't go.</p>
+    </div>
+
+    <div style="margin-top: 44px; display: grid; grid-template-columns: repeat(auto-fill, minmax(240px, 1fr)); gap: 44px 32px;">
+
+      <div style="display: flex; flex-direction: column; align-items: center; gap: 22px; padding: 34px 20px; border: 1px solid rgba(245,241,232,0.13); border-radius: 18px;">
+        <svg viewBox="6 6 38 38" fill="none" aria-hidden="true" style="width: 118px; height: 118px; animation: kzSpin 30s linear infinite;">
+          <defs><linearGradient id="g8" gradientUnits="objectBoundingBox" x1="0" y1="1" x2="1" y2="0"><stop offset="0" stop-color="#5DCAA5"></stop><stop offset="1" stop-color="#8E86E8"></stop></linearGradient></defs>
+          <g fill="none" stroke="url(#g8)">
+            <path d="M11.79 33.55A15.5 15.5 0 0 1 11.31 15.11" stroke-width="1.9"></path>
+            <path d="M15.11 11.31A15.5 15.5 0 0 1 36.69 15.11" stroke-width="4.4"></path>
+            <path d="M38.9 19.72A15.5 15.5 0 0 1 25.89 39.39" stroke-width="6.2"></path>
+          </g>
+        </svg>
+        <div style="text-align: center;">
+          <div style="font-size: 15px; font-weight: 600; color: #F5F1E8;">8 &nbsp;Aqua → indigo</div>
+          <div style="margin-top: 7px; font-size: 13px; line-height: 1.5;">Number 1 flipped. The heavy arc lands on indigo instead of aqua.</div>
+        </div>
+      </div>
+
+      <div style="display: flex; flex-direction: column; align-items: center; gap: 22px; padding: 34px 20px; border: 1px solid rgba(245,241,232,0.13); border-radius: 18px;">
+        <svg viewBox="6 6 38 38" fill="none" aria-hidden="true" style="width: 118px; height: 118px; animation: kzSpin 30s linear infinite;">
+          <defs><linearGradient id="g9" gradientUnits="objectBoundingBox" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#5DCAA5"></stop><stop offset="1" stop-color="#1E7FD4"></stop></linearGradient></defs>
+          <g fill="none" stroke="url(#g9)">
+            <path d="M11.79 33.55A15.5 15.5 0 0 1 11.31 15.11" stroke-width="1.9"></path>
+            <path d="M15.11 11.31A15.5 15.5 0 0 1 36.69 15.11" stroke-width="4.4"></path>
+            <path d="M38.9 19.72A15.5 15.5 0 0 1 25.89 39.39" stroke-width="6.2"></path>
+          </g>
+        </svg>
+        <div style="text-align: center;">
+          <div style="font-size: 15px; font-weight: 600; color: #F5F1E8;">9 &nbsp;Aqua → pool blue, vertical</div>
+          <div style="margin-top: 7px; font-size: 13px; line-height: 1.5;">Runs top to bottom rather than diagonally. Deeper as it descends, like water.</div>
+        </div>
+      </div>
+
+      <div style="display: flex; flex-direction: column; align-items: center; gap: 22px; padding: 34px 20px; border: 1px solid rgba(245,241,232,0.13); border-radius: 18px;">
+        <svg viewBox="6 6 38 38" fill="none" aria-hidden="true" style="width: 118px; height: 118px; animation: kzSpin 30s linear infinite;">
+          <defs><linearGradient id="g10" gradientUnits="objectBoundingBox" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#F5F1E8"></stop><stop offset="1" stop-color="#0F6E56"></stop></linearGradient></defs>
+          <g fill="none" stroke="url(#g10)">
+            <path d="M11.79 33.55A15.5 15.5 0 0 1 11.31 15.11" stroke-width="1.9"></path>
+            <path d="M15.11 11.31A15.5 15.5 0 0 1 36.69 15.11" stroke-width="4.4"></path>
+            <path d="M38.9 19.72A15.5 15.5 0 0 1 25.89 39.39" stroke-width="6.2"></path>
+          </g>
+        </svg>
+        <div style="text-align: center;">
+          <div style="font-size: 15px; font-weight: 600; color: #F5F1E8;">10 &nbsp;Cream → deep teal, sideways</div>
+          <div style="margin-top: 7px; font-size: 13px; line-height: 1.5;">Left to right. Highest contrast in the set — reads clearly at nav size.</div>
+        </div>
+      </div>
+
+      <div style="display: flex; flex-direction: column; align-items: center; gap: 22px; padding: 34px 20px; border: 1px solid rgba(245,241,232,0.13); border-radius: 18px;">
+        <svg viewBox="6 6 38 38" fill="none" aria-hidden="true" style="width: 118px; height: 118px; animation: kzSpin 30s linear infinite;">
+          <defs><radialGradient id="g11" gradientUnits="objectBoundingBox" cx="0.5" cy="0.5" r="0.5"><stop offset="0" stop-color="#9BE8CB"></stop><stop offset="1" stop-color="#0F6E56"></stop></radialGradient></defs>
+          <g fill="none" stroke="url(#g11)">
+            <path d="M11.79 33.55A15.5 15.5 0 0 1 11.31 15.11" stroke-width="1.9"></path>
+            <path d="M15.11 11.31A15.5 15.5 0 0 1 36.69 15.11" stroke-width="4.4"></path>
+            <path d="M38.9 19.72A15.5 15.5 0 0 1 25.89 39.39" stroke-width="6.2"></path>
+          </g>
+        </svg>
+        <div style="text-align: center;">
+          <div style="font-size: 15px; font-weight: 600; color: #F5F1E8;">11 &nbsp;Radial, light centre</div>
+          <div style="margin-top: 7px; font-size: 13px; line-height: 1.5;">Not linear. Glows from the middle out, so the ring dims at its edges.</div>
+        </div>
+      </div>
+
+      <div style="display: flex; flex-direction: column; align-items: center; gap: 22px; padding: 34px 20px; border: 1px solid rgba(245,241,232,0.13); border-radius: 18px;">
+        <svg viewBox="6 6 38 38" fill="none" aria-hidden="true" style="width: 118px; height: 118px; animation: kzSpin 30s linear infinite;">
+          <defs><linearGradient id="g12" gradientUnits="objectBoundingBox" x1="0" y1="1" x2="1" y2="0"><stop offset="0" stop-color="#5DCAA5" stop-opacity="0.15"></stop><stop offset="1" stop-color="#5DCAA5"></stop></linearGradient></defs>
+          <g fill="none" stroke="url(#g12)">
+            <path d="M11.79 33.55A15.5 15.5 0 0 1 11.31 15.11" stroke-width="1.9"></path>
+            <path d="M15.11 11.31A15.5 15.5 0 0 1 36.69 15.11" stroke-width="4.4"></path>
+            <path d="M38.9 19.72A15.5 15.5 0 0 1 25.89 39.39" stroke-width="6.2"></path>
+          </g>
+        </svg>
+        <div style="text-align: center;">
+          <div style="font-size: 15px; font-weight: 600; color: #F5F1E8;">12 &nbsp;Aqua, fading to nothing</div>
+          <div style="margin-top: 7px; font-size: 13px; line-height: 1.5;">One colour, fading out at the thin end. The tail dissolves instead of changing hue.</div>
+        </div>
+      </div>
+
+      <div style="display: flex; flex-direction: column; align-items: center; gap: 22px; padding: 34px 20px; border: 1px solid rgba(245,241,232,0.13); border-radius: 18px;">
+        <svg viewBox="6 6 38 38" fill="none" aria-hidden="true" style="width: 118px; height: 118px; animation: kzSpin 30s linear infinite;">
+          <defs><linearGradient id="g13" gradientUnits="objectBoundingBox" x1="0" y1="1" x2="1" y2="0"><stop offset="0" stop-color="#3E9C7E"></stop><stop offset="1" stop-color="#9BE8CB"></stop></linearGradient></defs>
+          <g fill="none" stroke="url(#g13)">
+            <path d="M11.79 33.55A15.5 15.5 0 0 1 11.31 15.11" stroke-width="1.9"></path>
+            <path d="M15.11 11.31A15.5 15.5 0 0 1 36.69 15.11" stroke-width="4.4"></path>
+            <path d="M38.9 19.72A15.5 15.5 0 0 1 25.89 39.39" stroke-width="6.2"></path>
+          </g>
+        </svg>
+        <div style="text-align: center;">
+          <div style="font-size: 15px; font-weight: 600; color: #F5F1E8;">13 &nbsp;Two aquas, close together</div>
+          <div style="margin-top: 7px; font-size: 13px; line-height: 1.5;">The subtlest gradient here. You read it as one colour with a sheen.</div>
+        </div>
+      </div>
+
+      <div style="display: flex; flex-direction: column; align-items: center; gap: 22px; padding: 34px 20px; border: 1px solid rgba(245,241,232,0.13); border-radius: 18px;">
+        <svg viewBox="6 6 38 38" fill="none" aria-hidden="true" style="width: 118px; height: 118px; animation: kzSpin 30s linear infinite;">
+          <defs><linearGradient id="g14" gradientUnits="objectBoundingBox" x1="0" y1="1" x2="1" y2="0"><stop offset="0" stop-color="#D8B25A"></stop><stop offset="1" stop-color="#5DCAA5"></stop></linearGradient></defs>
+          <g fill="none" stroke="url(#g14)">
+            <path d="M11.79 33.55A15.5 15.5 0 0 1 11.31 15.11" stroke-width="1.9"></path>
+            <path d="M15.11 11.31A15.5 15.5 0 0 1 36.69 15.11" stroke-width="4.4"></path>
+            <path d="M38.9 19.72A15.5 15.5 0 0 1 25.89 39.39" stroke-width="6.2"></path>
+          </g>
+        </svg>
+        <div style="text-align: center;">
+          <div style="font-size: 15px; font-weight: 600; color: #F5F1E8;">14 &nbsp;Brass → aqua</div>
+          <div style="margin-top: 7px; font-size: 13px; line-height: 1.5;">Sunlight on water. Warmer and older-feeling than the clay in number 5.</div>
+        </div>
+      </div>
+
+      <div style="display: flex; flex-direction: column; align-items: center; gap: 22px; padding: 34px 20px; border: 1px solid rgba(245,241,232,0.13); border-radius: 18px;">
+        <svg viewBox="6 6 38 38" fill="none" aria-hidden="true" style="width: 118px; height: 118px; animation: kzSpin 30s linear infinite;">
+          <defs><linearGradient id="g15" gradientUnits="objectBoundingBox" x1="1" y1="1" x2="0" y2="0"><stop offset="0" stop-color="#5DCAA5"></stop><stop offset="1" stop-color="#F5F1E8"></stop></linearGradient></defs>
+          <g fill="none" stroke="url(#g15)">
+            <path d="M11.79 33.55A15.5 15.5 0 0 1 11.31 15.11" stroke-width="1.9"></path>
+            <path d="M15.11 11.31A15.5 15.5 0 0 1 36.69 15.11" stroke-width="4.4"></path>
+            <path d="M38.9 19.72A15.5 15.5 0 0 1 25.89 39.39" stroke-width="6.2"></path>
+          </g>
+        </svg>
+        <div style="text-align: center;">
+          <div style="font-size: 15px; font-weight: 600; color: #F5F1E8;">15 &nbsp;Aqua → cream, opposite corner</div>
+          <div style="margin-top: 7px; font-size: 13px; line-height: 1.5;">Number 3 on the other diagonal, so the bright end sits on the thin arc.</div>
+        </div>
+      </div>
+
+    </div>
+
+    <p style="margin: 56px 0 0; max-width: 560px; font-size: 14px; line-height: 1.65; color: rgba(245,241,232,0.45);">Tell me a letter or a number and I'll apply it to the nav, the footer and the big animated mark. If none of them land, name the colours you want instead — three for the along-the-ring set (tip, middle, heavy end), two for the across-the-mark set.</p>
+  </div>
+</div>
+</x-dc>
+</body>
+</html>
